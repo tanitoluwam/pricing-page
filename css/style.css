@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lobster&family=Macondo&family=Montserrat:wght@500&family=Open+Sans:wght@300;400;600&family=Permanent+Marker&family=Poppins:wght@400;800&family=Roboto:wght@500;700&family=Satisfy&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Karla;
+  color: #e5eff5;
+  font-size: 16px;
+}
+.subscription__card{
+  background-color: #e5eff53b;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  width: 45%;
+  margin: 0 auto;
+  text-align: justify;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.container__intro {
+  padding: 50px 30px;
+}
+
+.header {
+  margin-bottom: 20px;
+  color: rgb(42, 178, 175);
+}
+.sub__header {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+.intro {
+  color: #98a6bd;
+  font-weight: 400;
+  width: 93%;
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
+}
+.flex__container {
+  display: flex;
+  width: 100%;
+}
+.subscription {
+  background-color: #2ab2af;
+  flex-basis: 50%;
+  padding: 28px;
+  height: 250px;
+}
+.subscription__header, .mission__header {
+  margin-bottom: 15px;
+}
+.price__container {
+  color: hsla(203, 44%, 93%, 0.699);
+  margin-bottom: 15px;
+}
+.price {
+  font-weight: 700;
+  font-size: 30px;
+}
+.details {
+  margin-bottom: 15px;
+}
+.cta__btn {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  padding: 15px 40px;
+  margin-top: 18px;
+  width: 100%;
+  border-radius: 5px;
+}
+.cta__btn:hover {
+  background-color: hsla(71, 73%, 54%, 0.47);
+  color: white;
+  transition: ease-in-out 0.5;
+}
+
+.mission {
+  background-color: #2ab2af8d;
+  flex-basis: 50%;
+  padding: 30px;
+  height: 250px;
+}
+.mission__statement {
+  width: 90%;
+  margin-top: 15px;
+  /* line-height: 1.5rem; */
+}
+
+@media (min-width: 280px) and (max-width: 400px) {
+   .container{
+      width: 300px;
+      font-size: 13px;
+   }
+   .flex__container{
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 410px) and (max-width: 600px) {
+   .container{
+      width: 375px;
+      font-size: 13px;
+   }
+   .flex__container{
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 610px) and (max-width: 1180px) {
+   .container{
+      width: 600px;
+      font-size: 20px;
+   }
+   .flex__container {
+      display: flex;
+      width: 100%;
+    }
+}
+
